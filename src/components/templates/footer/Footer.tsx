@@ -14,8 +14,29 @@ export const Footer = () => {
         <h2 className="h4 mb-4">{t('footer.aboutUs')}</h2>
         <div className="max-w-4xl">
           {t(
-            'Explore comprehensive resources on trade finance, factoring, and invoice financing at TradeFinance360. Get expert advice, industry trends, and actionable insights for businesses seeking financing solutions, cash flow management, and risk mitigation in global trade.',
-          )}
+            `Explore comprehensive resources on trade finance, factoring, and invoice financing at TradeFinance360. Get expert advice, industry trends, and actionable insights for businesses seeking financing solutions, cash flow management, and risk mitigation in global trade.`,
+          )}{' '}
+          {
+            <Link
+              href="mailto:tobias.pfuetze@originatecapital.co"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="text-blue500"
+            >
+              Reach out
+            </Link>
+          }{' '}
+          {t('and connect on')}{' '}
+          {
+            <Link
+              href="https://www.linkedin.com/in/tobiaspfuetze/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="text-blue500"
+            >
+              LinkedIn
+            </Link>
+          }
         </div>
         <div className="mt-8">
           {t('footer.powerBy')}{' '}
